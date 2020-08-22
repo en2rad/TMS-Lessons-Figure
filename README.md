@@ -1,5 +1,7 @@
 ## Solution task Figure
 
+[Watch result here 😊](https://oleg-kolosov.github.io/TMS-Lessons-Figure/)
+
 #### HTML
 
 ```
