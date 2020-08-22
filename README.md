@@ -13,12 +13,14 @@
 </head>
 <body>
     <div class="wrap">
-        <div class="huge-square"></div>
-        <div class="tiny-square"></div>
-        <div class="circle circle--top-left"></div>
-        <div class="circle circle--top-right"></div>
-        <div class="circle circle--bottom-left"></div>
-        <div class="circle circle--bottom-right"></div>
+        <div class="figure">
+            <div class="figure__square-huge"></div>
+            <div class="figure__square-tiny"></div>
+            <div class="figure__circle figure__circle--top-left"></div>
+            <div class="figure__circle figure__circle--top-right"></div>
+            <div class="figure__circle figure__circle--bottom-left"></div>
+            <div class="figure__circle figure__circle--bottom-right"></div>
+        </div>
     </div>
 </body>
 </html>
@@ -34,14 +36,20 @@ body {
 }
 
 .wrap {
-    position: relative;
     width: 1000px;
     height: 1000px;
     margin: 0 auto;
 }
+
+.figure {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 /* === Huge square
    ====================================================== */
-.huge-square {
+.figure__square-huge {
     position: absolute;
     top: 25%;
     left: 25%;
@@ -51,13 +59,14 @@ body {
     z-index: 10;
 }
 
-.huge-square:hover {
+.figure__square-huge:hover {
     z-index: 20;
     background: #111;
 }
+
 /* === Tiny square 
    ====================================================== */
-.tiny-square {
+.figure__square-tiny {
     position: absolute;
     top: 37.5%;
     left: 37.5%;
@@ -67,61 +76,61 @@ body {
     border-radius: 15%;
     z-index: 15;
 }
+
 /* === Circles 
    ====================================================== */
-.circle {
+.figure__circle {
     width: 25%;
     height: 25%;
     border-radius: 50%;
     background: #ec2119;
 }
 
-.circle--top-left {
+.figure__circle--top-left {
     position: absolute;
     top: 12.5%;
     left: 12.5%;
     z-index: 5;
 }
 
-.circle--top-left:hover {
+.figure__circle--top-left:hover {
     z-index: 20;
     background: #666;
 }
 
-.circle--top-right {
+.figure__circle--top-right {
     position: absolute;
     top: 12.5%;
     right: 12.5%;
     z-index: 5;
 }
 
-.circle--top-right:hover {
+.figure__circle--top-right:hover {
     z-index: 20;
     background: #777;
 }
 
-.circle--bottom-left {
+.figure__circle--bottom-left {
     position: absolute;
     bottom: 12.5%;
     left: 12.5%;
     z-index: 5;
 }
 
-.circle--bottom-left:hover {
+.figure__circle--bottom-left:hover {
     z-index: 20;
     background: #888;
 }
 
-.circle--bottom-right {
+.figure__circle--bottom-right {
     position: absolute;
     bottom: 12.5%;
     right: 12.5%;
     z-index: 5;
 }
 
-.circle--bottom-right:hover {
+.figure__circle--bottom-right:hover {
     z-index: 20;
     background: #999;
 }
-
 ```
